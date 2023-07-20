@@ -4,6 +4,7 @@ yarn-error.log
 
 # Ignore wrangler stuff
 .wrangler/
+*.vars
 
 # Ignore build stuff
 cache/

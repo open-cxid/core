@@ -1,0 +1,18 @@
+name = "cxid-gateway"
+main = "src/worker.ts"
+compatibility_date = "2023-07-05"
+compatibility_flags = [ "nodejs_compat" ]
+
+[env.production]
+vars = { BASE_PATH = "/" }
+kv_namespaces = [
+    { binding = "EXCHANGES", id = "da8526c44e1041188fbf5a4e5e11a874" },
+    { binding = "NAMES", id = "0a59c431c0cf4077a11de528b2b7e33e" }
+]
+
+[env.staging]
+vars = { BASE_PATH = "/" }
+kv_namespaces = [
+    { binding = "EXCHANGES", id = "6eb7cb9d82b04f9691e731a215f168b7", preview_id = "0b4e870782004f81bf0d239a2392af13" },
+    { binding = "NAMES", id = "f34bc95067e946968b0925243bdf932e", preview_id = "a0d3dbbf7c914aacb598d08bddbc0f19" }
+]
