@@ -2,6 +2,9 @@
 node_modules/
 yarn-error.log
 
+# Ignore wrangler stuff
+.wrangler/
+
 # Ignore build stuff
 cache/
 build/
